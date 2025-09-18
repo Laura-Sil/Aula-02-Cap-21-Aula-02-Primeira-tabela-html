@@ -1,21 +1,55 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Tabela de Produtos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 400px;
+            border-collapse: collapse;
+        }
+
+        tr.linha{
+            background-color: gray;
+        }
+
+
+
+        th.nomep{
+            background-color: cornflowerblue;
+        }
+
+
+
+        td{
+            border: 1px solid black;
+            padding: 8px;
+        }
+        
+
+
+
+        
+    </style>
 </head>
 <body>
-  <h2>Exemplo esperado de saída (sem CSS)</h2>
-  <table border="1">
-    <thead>
-      <tr>
-        <th>Nome do Produto</th>
+    <h2>Exemplo esperado de saída (sem CSS)</h2>
+  <table>
+    <head>
+      <tr class="linha">
+        <th class="nomep">Nome do Produto</th>
         <th>Categoria</th>
         <th>Preço (R$)</th>
         <th>Estoque</th>
       </tr>
-    </thead>
-    <tbody>
+    </head>
+    <body>
       <tr>
         <td>Camiseta</td>
         <td>Vestuário</td>
@@ -34,7 +68,6 @@
         <td>29,90</td>
         <td>15</td>
       </tr>
-    </tbody>
-  </table>
+    
 </body>
 </html>
